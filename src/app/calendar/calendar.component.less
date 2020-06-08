@@ -1,0 +1,46 @@
+@primaryColor: #dc3545;
+@darkColor: #333333;
+@lightColor: #f4f4f4;
+
+table {
+    width: 100%;
+
+    margin-bottom: 1rem;
+
+    border-collapse: collapse;
+
+    td, th {
+        border: 1px solid #000;
+
+        padding: .5rem 1rem;
+
+    }
+
+    td {
+        text-align: center;
+        
+        transition: .2s all;
+
+        &.disabled {
+            opacity: .5;
+        }
+
+        &:hover:not(.disabled) {
+            background: #eee;
+            cursor: pointer;
+        }
+    }
+    
+    .active {
+        color: @primaryColor;
+
+        background-color: lightskyblue;
+
+        font-weight: bold;
+
+    }
+
+    .selected {
+        color: blue;
+    }
+}

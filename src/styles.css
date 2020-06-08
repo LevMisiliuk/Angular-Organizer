@@ -1,0 +1,81 @@
+/* You can add global styles to this file, and also import other style files */
+/* Variables*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5vAw.ttf) format('truetype');
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6rem;
+  background: #ffffff;
+  color: #333;
+}
+a {
+  text-decoration: none;
+  color: #dc3545;
+}
+a:hover {
+  color: #666;
+}
+ul {
+  list-style: none;
+}
+input {
+  display: block;
+  width: 100%;
+  padding: 0.4rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  border: 1px #ccc solid;
+  outline: none;
+}
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+table th {
+  background: #f4f4f4;
+}
+.btn {
+  display: inline-block;
+  background: #f4f4f4;
+  color: #333;
+  padding: 0.4rem 1.3rem;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s;
+}
+.btn:disabled {
+  background: #333333;
+  color: #fff;
+  cursor: not-allowed;
+}
+.btn:hover:not(:disabled) {
+  opacity: 0.8;
+}
+.btn-block {
+  display: block;
+  width: 100%;
+}
+.btn-primary {
+  background: #dc3545;
+  color: #fff;
+}
+.text-align {
+  text-align: center;
+}
